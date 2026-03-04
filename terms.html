@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — Bellonaire</title>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bellonaire.com/terms.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Bellonaire</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="legal-page">
+    <div class="container">
+      <div class="legal-content fade-in">
+        <h1>Terms of Service</h1>
+        <p class="legal-meta">Last updated: March 2026</p>
+
+        <h2>1. Agreement to Terms</h2>
+        <p>By accessing or using the Bellonaire website (bellonaire.com) and services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.</p>
+
+        <h2>2. Products and Services</h2>
+        <p>Bellonaire LLC operates as an online retailer of health, wellness, and consumer electronics products. All products are subject to availability. We reserve the right to modify or discontinue any product without prior notice.</p>
+
+        <h2>3. Orders and Payment</h2>
+        <p>When you place an order, you agree to provide accurate and complete information. All prices are listed in US dollars unless otherwise stated. We reserve the right to refuse or cancel any order at our discretion, including orders that appear to be placed in error or through fraudulent means.</p>
+
+        <h2>4. Shipping and Delivery</h2>
+        <p>Shipping times and costs vary based on destination and selected shipping method. Estimated delivery dates are not guaranteed. Risk of loss and title for items pass to you upon delivery to the carrier. Detailed shipping information will be published prior to accepting customer orders.</p>
+
+        <h2>5. Returns and Refunds</h2>
+        <p>Our return and refund policy will be finalized and published prior to accepting customer orders. For questions, contact contact@bellonaire.com.</p>
+
+        <h2>6. Intellectual Property</h2>
+        <p>All content on this website — including text, graphics, logos, images, and software — is the property of Bellonaire LLC and is protected by United States and international intellectual property laws. You may not reproduce, distribute, or create derivative works without our express written permission.</p>
+
+        <h2>7. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, Bellonaire LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our website or products.</p>
+
+        <h2>8. Governing Law</h2>
+        <p>These Terms of Service shall be governed by and construed in accordance with the laws of the State of Wyoming, United States, without regard to conflict of law principles.</p>
+
+        <h2>9. Changes to Terms</h2>
+        <p>We reserve the right to update these Terms of Service at any time. Changes become effective upon posting to this page. Continued use of our services constitutes acceptance of the updated terms.</p>
+
+        <h2>10. Contact</h2>
+        <p>For questions regarding these Terms of Service, contact us at:</p>
+        <p>Bellonaire LLC<br>contact@bellonaire.com</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand">Bellonaire</div>
+          <p class="footer-brand-sub">Curated essentials, delivered.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col"><h4>Shop</h4><ul><li><a href="products.html">All Products</a></li></ul></div>
+          <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+          <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="refunds.html">Refunds</a></li><li><a href="shipping.html">Shipping</a></li></ul></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Bellonaire LLC. All rights reserved.</span></div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click',()=>{document.querySelector('.nav-links').classList.toggle('open')});
+    const observer=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')})},{threshold:0.1});
+    document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
