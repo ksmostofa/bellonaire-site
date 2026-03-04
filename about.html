@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Bellonaire</title>
+  <meta name="description" content="Bellonaire LLC is a US-registered e-commerce company specializing in health, wellness, and consumer electronics.">
+  <meta property="og:title" content="About Bellonaire LLC">
+  <meta property="og:description" content="US-registered e-commerce company specializing in curated health, wellness, and electronics products.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bellonaire.com/about.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Bellonaire</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="about-hero">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">About Us</span>
+        <h1>Building a better way to shop</h1>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="about-content">
+        <div class="fade-in">
+          <p>Bellonaire LLC is a US-registered e-commerce company specializing in the curation and retail of health, wellness, and consumer electronics products.</p>
+          <p>We believe the best products shouldn't be hard to find. Our team sources quality items from trusted manufacturers and makes them accessible through a seamless online shopping experience.</p>
+          <p>Our focus is simple: identify products that genuinely improve daily life, verify their quality, and make them available at fair prices with responsive customer service.</p>
+          <p>We operate as a direct-to-consumer online retailer, focused on delivering a straightforward, reliable shopping experience.</p>
+        </div>
+        <div class="about-sidebar fade-in">
+          <h3>Company Details</h3>
+          <div class="detail-row">
+            <span class="detail-label">Legal Name</span>
+            <span class="detail-value">Bellonaire LLC</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Entity Type</span>
+            <span class="detail-value">Limited Liability Company</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Registered</span>
+            <span class="detail-value">Wyoming, USA</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Founded</span>
+            <span class="detail-value">January 2026</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Industry</span>
+            <span class="detail-value">E-commerce / Online Retail</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Location</span>
+            <span class="detail-value">United States</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Our Approach</span>
+        <h2>What drives us</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-item fade-in">
+          <span class="value-number">01</span>
+          <h4>Rigorous Sourcing</h4>
+          <p>We work with vetted manufacturers and suppliers to ensure every product meets our quality standards.</p>
+        </div>
+        <div class="value-item fade-in">
+          <span class="value-number">02</span>
+          <h4>Fair Pricing</h4>
+          <p>Our online-first model allows us to offer competitive pricing without sacrificing quality.</p>
+        </div>
+        <div class="value-item fade-in">
+          <span class="value-number">03</span>
+          <h4>Customer Trust</h4>
+          <p>Clear policies, responsive support, and honest product descriptions build lasting relationships.</p>
+        </div>
+        <div class="value-item fade-in">
+          <span class="value-number">04</span>
+          <h4>Continuous Improvement</h4>
+          <p>We listen to customer feedback and constantly refine our product selection and service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand">Bellonaire</div>
+          <p class="footer-brand-sub">Curated essentials, delivered.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Shop</h4>
+            <ul><li><a href="products.html">All Products</a></li></ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="terms.html">Terms</a></li>
+              <li><a href="refunds.html">Refunds</a></li>
+              <li><a href="shipping.html">Shipping</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Bellonaire LLC. All rights reserved.</span></div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click',()=>{document.querySelector('.nav-links').classList.toggle('open')});
+    const observer=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')})},{threshold:0.1});
+    document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+  </script>
+</body>
+          </html>
