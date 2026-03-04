@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipping Policy — Bellonaire</title>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bellonaire.com/shipping.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Bellonaire</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="legal-page">
+    <div class="container">
+      <div class="legal-content fade-in">
+        <h1>Shipping Policy</h1>
+        <p class="legal-meta">Last updated: March 2026</p>
+
+        <h2>1. Overview</h2>
+        <p>Bellonaire LLC is committed to providing reliable and efficient shipping for all orders. We are currently finalizing our shipping partnerships and logistics infrastructure.</p>
+
+        <h2>2. Current Status</h2>
+        <p>Detailed shipping information — including available methods, estimated delivery times, costs, and regions served — will be published prior to accepting customer orders.</p>
+
+        <h2>3. General Principles</h2>
+        <p>When published, our shipping policy will aim to:</p>
+        <ul>
+          <li>Offer clear estimated delivery timeframes</li>
+          <li>Provide tracking information for all shipments</li>
+          <li>Communicate shipping costs transparently before checkout</li>
+        </ul>
+
+        <h2>4. Contact</h2>
+        <p>If you have questions about shipping, please contact us at:</p>
+        <p>Bellonaire LLC<br>contact@bellonaire.com</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand">Bellonaire</div>
+          <p class="footer-brand-sub">Curated essentials, delivered.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col"><h4>Shop</h4><ul><li><a href="products.html">All Products</a></li></ul></div>
+          <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+          <div class="footer-col"><h4>Legal</h4><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="refunds.html">Refunds</a></li><li><a href="shipping.html">Shipping</a></li></ul></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Bellonaire LLC. All rights reserved.</span></div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click',()=>{document.querySelector('.nav-links').classList.toggle('open')});
+    const observer=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')})},{threshold:0.1});
+    document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
