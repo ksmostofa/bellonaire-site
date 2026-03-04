@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — Bellonaire</title>
+  <meta name="description" content="Explore Bellonaire's curated categories of health, wellness, and consumer electronics products.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bellonaire.com/products.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Bellonaire</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="about-hero">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Our Catalog</span>
+        <h1>Carefully selected, quality assured</h1>
+        <p>We're building our product lineup with care. Each item is sourced from trusted manufacturers and reviewed for quality before it earns a place in our store.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="categories-grid">
+        <div class="category-card fade-in">
+          <span class="category-icon">◎</span>
+          <h3>Health &amp; Fitness</h3>
+          <p>Fitness accessories, recovery tools, resistance bands, and wellness essentials designed for an active lifestyle.</p>
+          <span class="category-tag">Coming Soon</span>
+        </div>
+        <div class="category-card fade-in">
+          <span class="category-icon">○</span>
+          <h3>Personal Wellness</h3>
+          <p>Relaxation tools, sleep accessories, and self-care essentials for a balanced daily routine.</p>
+          <span class="category-tag">Coming Soon</span>
+        </div>
+        <div class="category-card fade-in">
+          <span class="category-icon">◈</span>
+          <h3>Smart Electronics</h3>
+          <p>Wireless earbuds, portable chargers, Bluetooth speakers, and everyday tech essentials.</p>
+          <span class="category-tag">Coming Soon</span>
+        </div>
+        <div class="category-card fade-in">
+          <span class="category-icon">□</span>
+          <h3>Home Essentials</h3>
+          <p>Smart plugs, LED lighting, kitchen gadgets, and home organization solutions.</p>
+          <span class="category-tag">Coming Soon</span>
+        </div>
+        <div class="category-card fade-in">
+          <span class="category-icon">△</span>
+          <h3>Outdoor &amp; Travel</h3>
+          <p>Portable gear, travel organizers, hydration bottles, and compact accessories for life on the move.</p>
+          <span class="category-tag">Coming Soon</span>
+        </div>
+        <div class="category-card fade-in">
+          <span class="category-icon">◇</span>
+          <h3>Accessories</h3>
+          <p>Phone cases, cable organizers, desk accessories, and everyday carry items built to last.</p>
+          <span class="category-tag">Coming Soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-header fade-in" style="text-align:center;max-width:480px;margin:0 auto">
+        <span class="section-tag">Stay Updated</span>
+        <h2>Be the first to know</h2>
+        <p style="margin:16px auto 32px">We're finalizing our launch catalog. Reach out to get notified when products go live.</p>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-brand">Bellonaire</div>
+          <p class="footer-brand-sub">Curated essentials, delivered.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Shop</h4>
+            <ul><li><a href="products.html">All Products</a></li></ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="terms.html">Terms</a></li>
+              <li><a href="refunds.html">Refunds</a></li>
+              <li><a href="shipping.html">Shipping</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Bellonaire LLC. All rights reserved.</span></div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click',()=>{document.querySelector('.nav-links').classList.toggle('open')});
+    const observer=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')})},{threshold:0.1});
+    document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
